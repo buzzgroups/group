@@ -1,0 +1,1869 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+.nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 0;
+}
+
+.nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #555;
+}
+
+
+
+@media (min-width:768px) {
+    .home-bg-first-section {
+        margin-top: 150px;
+    }
+}
+
+.first-nav-container2 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    /* higher than other elements */
+}
+
+
+.first-nav-container {
+    background-color: black;
+}
+
+.nav-btn {
+    font-family: Roboto;
+    border-style: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px;
+    width: 57px;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.search-bar1 {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.search-bar2 {
+    width: 50px;
+    margin-right: 10px;
+}
+
+@media (min-width:768px) {
+    .nav-btn {
+        font-family: Roboto;
+        font-weight: bold;
+        border-style: none;
+        font-size: 13px;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        margin-right: 60px;
+    }
+
+    .search-bar1 {
+        width: 700px;
+        margin-right: 60px;
+    }
+
+    .search-bar2 {
+        width: 150px;
+        margin-right: 150px;
+    }
+}
+
+
+.second-nav-container {
+    background-color: #D1E5F4;
+}
+
+.nav-logo {
+    width: 160px;
+}
+
+#navItem {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media(min-width:768px) {
+    .nav-logo {
+        width: 200px;
+    }
+
+    #navItem {
+        font-family: Roboto;
+        font-weight: bold;
+        padding-left: 29px;
+        font-size: 14px;
+    }
+}
+
+.home-img {
+    height: 79vh;
+    background-size: cover;
+}
+
+@media(min-width:768px) {
+    .home-img {
+        background-size: cover;
+        height: 90vh;
+    }
+}
+
+
+
+/*marquee css*/
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    /* Hides the overflowed content */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    box-sizing: border-box;
+
+}
+
+/* Styling the content inside the marquee */
+.marquee-content {
+    display: inline-block;
+
+    /* Starts off-screen */
+    animation: marquee-animation 30s linear infinite;
+    /* Animation properties */
+}
+
+/* Keyframes for the scrolling effect */
+@keyframes marquee-animation {
+    0% {
+        transform: translateX(-100%);
+        /* Start position off-screen on the right */
+    }
+
+    100% {
+        transform: translateX(100%);
+        /* End position off-screen on the left */
+    }
+}
+
+.marquee-heading {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+.banner-paragraph {
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media(min-width:768px) {
+    .banner-paragraph {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: bold;
+        color: #C0C0C0;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 190px;
+        width: 400px;
+    }
+}
+
+.button {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #C0C0C0;
+    border-style: none;
+    color: white;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 4px;
+}
+
+
+@media(min-width:768px) {
+    .button {
+        font-family: Roboto;
+        font-style: italic;
+        font-weight: bold;
+        background-color: #C0C0C0;
+        border-style: none;
+        color: white;
+        width: 100px;
+        border-radius: 20px;
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+.button-container {
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .button-container {
+        text-align: start;
+        padding: 20px;
+        padding-left: 250px;
+    }
+}
+
+
+
+/*services css*/
+@media(max-width:768px) {
+    .services-small-container {
+        text-align: center;
+    }
+}
+
+.ourservice-heading {
+    font-family: Lucida Handwriting;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ourservice-paragraph {
+    font-family: Garamond;
+    padding-bottom: 15px;
+}
+
+@media(min-width:768px) {
+    .ourservice-heading {
+        font-family: Lucida Handwriting;
+        font-weight: bold;
+        padding-left: 50px;
+        font-size: 35px;
+    }
+
+    .ourservice-paragraph {
+        font-family: Garamond;
+        padding-left: 50px;
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+}
+
+.services-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743667165/download_19_ot7vt4.jpg");
+    padding: 10px;
+    background-size: cover;
+}
+
+.service-icon {
+    height: 155px;
+    width: 170px;
+}
+
+.service-icon {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+.heading {
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.service-paragraph {
+    font-family: Roboto;
+    font-size: 17px;
+}
+
+.styling-menu {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button-name {
+    font-family: Garamond;
+    font-weight: bold;
+}
+
+
+/*know us section*/
+.know-us-section {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743510752/YV85MC9hX3ZmbGlw_new_nf5iok.jpg");
+    padding: 20px;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.know-us-image-icon {
+    height: 170px;
+    width: 260px;
+}
+
+@media(min-width:768px) {
+    .know-us-image-icon {
+        height: 320px;
+        width: 500px;
+
+    }
+}
+
+.knowus-heading {
+    font-family: Lucida Handwriting;
+    font-weight: bold;
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+.knowus-paragraph1 {
+    font-family: Copperplate;
+    font-weight: bold;
+    padding-right: 26px;
+}
+
+.knowus-paragraph2 {
+    font-family: Copperplate;
+    padding-right: 15px;
+    padding: 30px;
+}
+
+.more-know-button {
+    font-family: Roboto;
+    border-style: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    /* Green */
+}
+
+.highlight {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+@media (min-width:768px) {
+    .knowus-heading {
+        font-family: Lucida Handwriting;
+        font-weight: bold;
+        padding-right: 15px;
+        font-size: 37px;
+    }
+
+    .knowus-paragraph1 {
+        font-family: Copperplate;
+        font-weight: bold;
+        padding-right: 28px;
+    }
+
+    .display-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        margin-left: 260px;
+    }
+
+    .highlight {
+        font-family: Georgia;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .more-know-button {
+        font-family: Roboto;
+        border-style: none;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        /* Green */
+    }
+}
+
+
+/*why buzz groups*/
+.why-buzz-groups-section {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.why-buzz-groups-section-heaidng {
+    font-family: Copperplate;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+@media(min-width:768px) {
+    .why-buzz-groups-section-heaidng {
+        font-family: Copperplate;
+        font-weight: bold;
+        margin-left: 20px;
+        margin: 20px;
+        font-size: 30px;
+
+    }
+}
+
+.small-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743511004/YV85MA_new_2_r3knti.jpg");
+    background-size: cover;
+}
+
+.why-choose-content {
+    font-family: Roboto;
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+}
+
+@media (max-width:768px) {
+    .why-choose-content {
+        font-family: Roboto;
+        font-size: 9px;
+        padding-left: 18px;
+    }
+}
+
+.small-cards {
+    background-color: #ffffff;
+    border-radius: 15;
+    margin-bottom: 10px;
+}
+
+.card-heading {
+    font-family: Copperplate;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-explination {
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+@media (max-width:768px) {
+    .card-explination {
+        font-family: Roboto;
+        font-size: 12px;
+
+    }
+}
+
+.service-logo {
+    height: 75px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+/*css for career opportunity*/
+.internship-big-container {
+    background-color: #ffffff;
+    margin: 25px;
+}
+
+.career-img {
+    height: 150px;
+}
+
+@media(min-width:768px) {
+    .career-img {
+        height: 59vh;
+    }
+}
+
+.career-heading {
+    font-family: Garamond;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+
+.career-paragraph {
+    font-family: Roboto;
+    font-size: 10px;
+}
+
+.career-content {
+    margin-top: 10px;
+}
+
+.eligibilty-heading {
+    font-family: Roboto;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.eligibility-paragraph {
+    font-family: Roboto;
+
+}
+
+
+@media(min-width:768px) {
+    .career-content {
+        margin-top: 90px;
+    }
+
+    .career-heading {
+        font-family: Garamond;
+        font-weight: bold;
+        font-size: 35px;
+        text-decoration-line: underline;
+        text-decoration-style: double;
+
+    }
+
+    .career-paragraph {
+        font-family: Roboto;
+        font-size: 14px;
+    }
+}
+
+.career-small-container {
+    background-color: #efeff1;
+    text-align: center;
+    padding: 20px;
+}
+
+.career-small-container-heading {
+    font-family: Garamond;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.career-small-container-paragraph {
+    font-family: Roboto;
+    font-size: 8px;
+}
+
+@media(min-width:768px) {
+    .career-small-container-heading {
+        font-family: Garamond;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .career-small-container-paragraph {
+        font-family: Roboto;
+        font-size: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.intern-program-heading {
+    font-family: Garamond;
+    text-decoration: double;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.intern-program-paragraph {
+    font-family: Roboto;
+    font-size: 11px;
+}
+
+.intern-button {
+    border: black;
+    background-color: #B8E2F2;
+    font-family: Roboto;
+    font-weight: bold;
+    padding: 4px;
+    font-size: 11px;
+  border: 2px solid black; /* Green */
+}
+
+
+/* css for our team */
+.our-team-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743768162/download_20_peirrh.jpg");
+    background-size: cover;
+    padding: 30px;
+
+}
+
+.our-team-headding {
+    font-family: Copperplate;
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+}
+
+.our-team-img-cards {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+}
+
+.our-team-img {
+    height: 40vh;
+    width: 200px;
+}
+
+@media(min-width:768px) {
+    .our-team-img-cards {
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 340px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .our-team-img {
+        height: 70vh;
+        width: 310px;
+    }
+
+}
+
+/*our team*/
+.our-team-name {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.role {
+    font-family: Roboto;
+}
+
+
+
+/*css for partner program*/
+.partner-program-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744014525/%E4%B8%8D%E8%A6%8F%E5%89%87%E5%B9%BE%E4%BD%95%E5%BA%95%E7%B4%8B%E8%83%8C%E6%99%AF%E7%B4%A0%E6%9D%90%E5%9C%96%E6%A1%8C%E5%B8%83%E6%89%8B%E6%A9%9F%E6%A1%8C%E5%B8%83%E5%9C%96%E7%89%87%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89_-_Pngtree_wjcpgc.jpg");
+    background-size: cover;
+    padding: 20px;
+}
+
+.franchise-enquiry-heaidng {
+    font-family: Copperplate;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.franchise-enquiry-paragraph {
+    font-family: Monaco;
+    font-size: 15px;
+}
+
+.franchise-enquiry-paragraph2 {
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.opportunity-img {
+    height: 150px;
+}
+
+@media(min-width:768px) {
+    .franchise-enquiry-heaidng {
+        font-family: Copperplate;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .opportunity-img {
+        height: 65vh;
+    }
+
+    .partner-program-content-container {
+        margin-top: 90px;
+    }
+
+    .franchise-enquiry-paragraph2 {
+        font-family: Roboto;
+        font-size: 25px;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .franchise-enquiry-paragraph {
+        font-family: Monaco;
+        font-size: 17px;
+    }
+}
+
+.buzz-mitra-container {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+}
+
+.buzz-mitra-img1 {
+    height: 100px;
+}
+
+.buzz-mitra-img2 {
+    height: 120px;
+}
+
+.Buzz-Mithra-agent-heading {
+    font-family: Copperplate;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.Buzz-Mithra-agent-paragraph {
+    font-family: Monaco;
+    font-size: 6px;
+}
+
+@media(min-width:768px) {
+
+    .buzz-mitra-img1 {
+        height: 50vh;
+    }
+
+    .buzz-mitra-img2 {
+        height: 50vh;
+    }
+
+    .Buzz-Mithra-agent-paragraph {
+        font-family: Monaco;
+        font-size: 15px;
+    }
+
+    .Buzz-Mithra-agent-heading {
+        font-family: Copperplate;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .buzz-sathi-container {
+        margin-top: 25px;
+    }
+}
+
+.read-more-button {
+    background-color: black;
+    font-family: Roboto;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+@media (max-width:768px) {
+    .read-more-button {
+        background-color: black;
+        font-family: Roboto;
+        border-style: none;
+        border-radius: 15px;
+        font-size: 10px;
+        color: white;
+        padding: 6px;
+    }
+}
+
+/*contact container */
+
+.contact-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744359587/Download_premium_image_of_Abstract_silver_metallic_background_design_by_marinemynt_about_backgrounds_design_background_background_abstract_texture_and_plain_background_2353716_jj98o1.jpg");
+    background-size: cover;
+    height: 50vh;
+    padding-top: 40px;
+}
+
+.follow-img-icon {
+    height: 30px;
+    border-radius: 20px;
+}
+
+.icons-container {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.address {
+    font-family: Roboto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.addres-container {
+    text-align: center;
+}
+
+.logo-icon {
+    height: 70px;
+}
+
+@media(min-width:768px) {
+    .contact-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744359587/Download_premium_image_of_Abstract_silver_metallic_background_design_by_marinemynt_about_backgrounds_design_background_background_abstract_texture_and_plain_background_2353716_jj98o1.jpg");
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .our-team-headding {
+        font-family: Copperplate;
+        font-weight: bold;
+        color: white;
+        padding-left: 50px;
+    }
+
+    .follow-img-icon {
+        height: 60px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+
+    .icons-container {
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+
+    .address {
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .logo-icon {
+        height: 100px;
+    }
+}
+
+.role {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.fixed-button-container {
+    background-color: white;
+    position: fixed;
+    bottom: 250px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 170px;
+}
+
+.fixed-button-container img {
+    width: 70px;
+    /* Adjust */
+    height: 70PX;
+    border-radius: 10px;
+    /* Optional rounded look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 170px;
+}
+
+
+.fixed-button-container:hover {
+    transform: scale(1.05);
+    border-radius: 170px;
+}
+
+@media(min-width:768px) {
+    .fixed-button-container {
+        background-color: white;
+        position: fixed;
+        bottom: 250px;
+        right: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        border-radius: 170px;
+    }
+
+    .fixed-button-container img {
+        width: 100px;
+        /* Adjust */
+        height: 90PX;
+        border-radius: 10px;
+        /* Optional rounded look */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 170px;
+    }
+
+
+    .fixed-button-container:hover {
+        transform: scale(1.05);
+        border-radius: 170px;
+    }
+}
+
+
+/*about us section*/
+.about-us-background-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744370551/Download_Abstract_background_dark_and_black_overlaps_002_for_free_tg1tok.jpg");
+    background-size: cover;
+    padding: 15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.aboutus-heaidng {
+    font-family: Roboto;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.aboutus-img-icon {
+    height: 150px;
+    border-radius: 25px;
+}
+
+.know-us-paragraph {
+    font-family: Roboto;
+    color: #ffffff;
+}
+
+.acheivement-img-icon {
+    height: 490px;
+    border-top-left-radius: 25px;
+}
+
+.member-of-femta-heaidng {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.femta-paragraph {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.back-button {
+    border-style: none;
+    background-color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    border-radius: 15px;
+    height: 40px;
+    width: 70px;
+    margin-top: 30px;
+}
+
+@media(max-width:768px) {
+    .aboutus-heaidng {
+        font-family: Roboto;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .aboutus-img-icon {
+        height: 150px;
+        border-radius: 25px;
+    }
+
+    .know-us-paragraph {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+    .acheivement-img-icon {
+        height: 300px;
+        border-top-left-radius: 25px;
+    }
+
+    .member-of-femta-heaidng {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+        text-decoration: underline;
+    }
+
+    .femta-paragraph {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+}
+
+
+/*knowus section*/
+.about-us-background-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744370551/Download_Abstract_background_dark_and_black_overlaps_002_for_free_tg1tok.jpg");
+    background-size: cover;
+    padding: 15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.aboutus-heaidng {
+    font-family: Roboto;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.aboutus-img-icon {
+    height: 150px;
+    border-radius: 25px;
+}
+
+.know-us-paragraph {
+    font-family: Roboto;
+    color: #ffffff;
+}
+
+.acheivement-img-icon {
+    height: 490px;
+    border-top-left-radius: 25px;
+}
+
+.member-of-femta-heaidng {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.femta-paragraph {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.back-button {
+    border-style: none;
+    background-color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    border-radius: 15px;
+    height: 40px;
+    width: 70px;
+    margin-top: 30px;
+}
+
+@media(max-width:768px) {
+    .aboutus-heaidng {
+        font-family: Roboto;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .aboutus-img-icon {
+        height: 150px;
+        border-radius: 25px;
+    }
+
+    .know-us-paragraph {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+    .acheivement-img-icon {
+        height: 300px;
+        border-top-left-radius: 25px;
+    }
+
+    .member-of-femta-heaidng {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+        text-decoration: underline;
+    }
+
+    .femta-paragraph {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+}
+
+
+/*holidays section*/
+.buzz-holidays-heading {
+    color: white;
+    font-family: Serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 150px;
+}
+
+.bh-nfo-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1746775469/download_41_hrpfvu_a_90_iqqefs.jpg");
+    background-size: cover;
+    text-align: center;
+    height: 35vh;
+}
+
+.bh-info-image {
+    height: 30vh;
+    padding-top: 40px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 30px;
+}
+
+@media (min-width:768px) {
+    .bh-nfo-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1746775469/download_41_hrpfvu_a_90_iqqefs.jpg");
+        background-size: cover;
+        text-align: center;
+        height: 75vh;
+        padding: 50px;
+    }
+
+    .bh-info-image {
+        height: 65vh;
+        padding-top: 50px;
+        border-top-left-radius: 150px;
+        border-bottom-right-radius: 140px;
+    }
+
+}
+
+
+
+.big-international-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/a_90/v1746526981/%D0%9E%D0%B1%D0%BE%D0%B8_iOS_iPhone_11_12_13_14_15_16_Pro_Max_buv0g0.jpg");
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.international-destination-heading {
+    font-family: Lucida Handwriting;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.buzz-holidays-container {
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.buzz-holidays-container {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.buzz-holidays-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buzz-holidays-container:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+.holidays-images {
+    height: 150px;
+    border-radius: 15px;
+}
+
+.days-small-conatiner {
+    background-color: #74886b;
+    border-radius: 5px;
+    width: 90px;
+}
+
+.days-paragraph {
+    font-family: Roboto;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    font-size: 10px;
+}
+
+.description-holidays {
+    font-family: sans-serif;
+    font-size: 9px;
+}
+
+.destination-heading {
+    font-family: Cursive;
+    font-size: 10px;
+}
+
+@media(min-width:768px) {
+    .holidays-images {
+        height: 185px;
+        border-radius: 15px;
+    }
+
+    .description-holidays {
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+    .destination-heading {
+        font-family: Cursive;
+        font-size: 15px;
+    }
+
+    .international-destination-heading {
+        font-family: Lucida Handwriting;
+        font-size: 35px;
+        color: white;
+        text-align: center;
+    }
+}
+
+.big-domestic-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1746530843/Free_Wallpaper_3d_Geometry_Background_Images_Abstract_Geometric_Post_Background_Photo_Background_PNG_and_Vectors_s4f9ms.jpg");
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+/*forexsection */
+.forex-card-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745045146/Premium_Vector___Futuristic_glowing_dollar_sign_with_plexus_lines_and_glitter_particles_lje3dw.jpg");
+    background-size: cover;
+    padding-bottom: 15px;
+}
+
+.forex-heading {
+    font-family: Fantasy;
+    color: white;
+    font-size: 17px;
+    padding-top: 40px;
+    width: 160px;
+    padding-left: 20px;
+}
+
+@media(min-width:768px) {
+    .forex-card-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745045146/Premium_Vector___Futuristic_glowing_dollar_sign_with_plexus_lines_and_glitter_particles_lje3dw.jpg");
+        background-size: cover;
+        height: 80vh;
+    }
+
+    .forex-heading {
+        font-family: Fantasy;
+        color: white;
+        font-size: 40px;
+        padding-top: 160px;
+        width: 450px;
+        padding-left: 30px;
+        text-align: end;
+    }
+
+}
+
+
+.second-background-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1747037464/Download_premium_vector_of_Futuristic_global_network_technology_vector_by_Kappy_about_background_blue_background_neon_circle_and_technology_background_1055195_ynmlcb.jpg");
+    background-size: cover;
+    padding: 15px;
+}
+
+.buzz-forex-second-bg-container-img {
+    height: 35vh;
+    width: 250px;
+}
+
+@media(min-width:768px) {
+    .buzz-forex-second-bg-container-img {
+        height: 58vh;
+        width: 450px;
+        margin-left: 37px;
+    }
+}
+
+.list-style-type {
+    font-family: Monaco;
+}
+
+.travel-smart-buzz-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.travel-smart-img-icon {
+    height: 40vh;
+}
+
+.travel-smart-img-icon2 {
+    height: 42vh;
+}
+
+@media(min-width:768px) {
+    .travel-smart-img-icon {
+        height: 30vh;
+    }
+
+    .travel-smart-img-icon2 {
+        height: 33vh;
+    }
+}
+
+.quote-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745132093/Business_background_with_various_money_symbol_Clip_Art_32144423_iweut4.jpg");
+    background-size: cover;
+    height: 40vh;
+    margin-top: 20px;
+}
+
+.quote-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 60px;
+}
+
+@media (min-width:768px) {
+    .quote-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745132093/Business_background_with_various_money_symbol_Clip_Art_32144423_iweut4.jpg");
+        background-size: cover;
+        height: 60vh;
+        margin-top: 20px;
+    }
+
+    .quote-heading {
+        font-family: Serif;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        padding: 60px;
+        padding-top: 230px;
+    }
+}
+
+/*finserve section */
+.finserve-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745142604/Premium_Photo___Pen_lying_with_dollars_on_paper_with_printed_word_insurance_twrkxy.jpg");
+    background-size: cover;
+    height: 99vh;
+}
+
+.second-finserve-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745148952/Premium_Vector___Simple_blue_color_background_vector_for_business_tncl0o.jpg");
+    background-size: cover;
+    padding: 10px;
+}
+
+.buzz-finserve-heading {
+    font-family: Serif;
+    font-weight: bold;
+    padding-top: 50px;
+    font-size: 35px;
+}
+
+.buzz-finserve-paragraph {
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+@media (min-width:768px) {
+    .buzz-finserve-paragraph {
+        font-family: Roboto;
+        font-size: 20px;
+    }
+}
+
+.offering-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.services-list {
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+@media(min-width:768px) {
+    .services-list {
+        font-family: Roboto;
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    .offering-heading {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 17px;
+        text-decoration: underline;
+        padding-left: 30px;
+    }
+}
+
+.all-insurances-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745150109/download_28_vz5ynq.jpg");
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.life-insurance-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+.life-insurance-paragraph {
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+.service-img {
+    height: 220px;
+    width: 250px;
+    border-radius: 30px;
+}
+
+@media(min-width:768px) {
+    .service-img {
+        height: 290px;
+        width: 400px;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-left: 40px;
+    }
+
+    .life-insurance-heading {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 17px;
+        padding-top: 20px;
+        text-decoration: underline;
+    }
+}
+
+
+
+/*streetscorner section */
+.main-bg-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745479990/Premium_Photo___Abstract_dark_futuristic_background_Blue_neon_light_rays_reflect_off_the_water_wygviz.jpg");
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.rental-bike-img {
+    height: 70vh;
+}
+
+.streets-corner-heading {
+    color: white;
+    font-family: Serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 150px;
+}
+
+@media(max-width:768px) {
+    .main-bg-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745479990/Premium_Photo___Abstract_dark_futuristic_background_Blue_neon_light_rays_reflect_off_the_water_wygviz.jpg");
+        background-size: cover;
+        height: 60vh;
+        text-align: center;
+    }
+
+    .rental-bike-img {
+        height: 40vh;
+    }
+
+    .streets-corner-heading {
+        color: white;
+        font-family: Serif;
+        font-style: italic;
+        font-weight: bold;
+        padding-top: 40px;
+        font-size: 25px;
+    }
+}
+
+.second-small-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745482618/Background_Graphic_by_Wayan_Studio_Creative_Fabrica_og2jkj.jpg");
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.small-container-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.small-container-paragraph {
+    font-family: Roboto;
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .small-container-heading {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+
+.service-icons-container {
+    background-color: white;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.service-img-icon {
+    height: 40px;
+    border-radius: 10px;
+    padding-top: 13px;
+}
+
+.icon-container {
+    background-color: black;
+    height: 80px;
+    width: 90px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.icon-content {
+    font-family: Roboto;
+    color: white;
+    font-size: 10px;
+    padding-top: 3px;
+}
+
+@media(min-width:768px) {
+    .service-icons-container {
+        background-color: white;
+        border-radius: 15px;
+        margin: 35px;
+        padding-left: 70px;
+    }
+
+    .service-img-icon {
+        height: 70px;
+        border-radius: 10px;
+        padding-top: 13px;
+    }
+
+    .icon-container {
+        background-color: black;
+        height: 130px;
+        width: 140px;
+        border-radius: 15px;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .icon-content {
+        font-family: Roboto;
+        color: white;
+        font-size: 16px;
+        padding-top: 5px;
+
+    }
+
+}
+
+
+.benifitsof-electric-bikes-container {
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    width: 150px;
+}
+
+.electric-bike-benifits {
+    font-family: Roboto;
+    font-size: 10px;
+    padding: 4px;
+    color: white;
+}
+
+.bikes-benifits-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+@media(min-width:768px) {
+    .benifitsof-electric-bikes-container {
+        background-color: black;
+        border-radius: 10px;
+        text-align: center;
+        margin: 5px;
+        width: 150px;
+    }
+
+    .bikes-benifits-heading {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 15px;
+        text-decoration: underline;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:768px) {
+    .benifits-container {
+        padding-left: 20px;
+    }
+}
+
+.plans-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745564725/Premium_Vector___Gray_Silver_wave_abstract_background_hoprwi.jpg");
+    background-size: cover;
+    padding: 20px;
+}
+
+.plans-img1{
+    height: 60vh;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.quote-heading1 {
+    font-family: Fantasy;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+.streets-corner-icon1{
+    height: 35vh;
+    margin-left: 30px;
+}
+
+@media(min-width:768px) {
+    .plans-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745564725/Premium_Vector___Gray_Silver_wave_abstract_background_hoprwi.jpg");
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .plans-img1 {
+        height: 570px;
+        width: 580px;
+        margin: 30px;
+    }
+
+    .streets-corner-icons-container {
+        margin-top: 120px;
+        padding-left: 180px;
+    }
+
+    .quote-heading1 {
+        font-family: Fantasy;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .streets-corner-icon1 {
+        height: 50vh;
+        margin-left: 20px;
+    }
+}
+
+.third-bike-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745651250/download_31_al7qn1.jpg");
+    background-size: cover;
+    padding: 30px;
+}
+
+.bike-img-icon1 {
+    height: 590px;
+    width: 650px;
+    margin-top: 25px;
+}
+
+.bike-img-icon2 {
+    height: 450px;
+}
+
+@media(min-width:768px) {
+    .bike-img-icon1 {
+        height: 590px;
+        width: 650px;
+        margin-top: 25px;
+    }
+
+    .bike-img-icon2 {
+        height: 450px;
+    }
+
+}
+
+
+/* one month internship section */
+.apply-bg-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744629496/Blue_Minimalist_Texture_Background_Wallpaper_Image_For_Free_Download_-_Pngtree_mlapqi.jpg");
+    background-size: cover;
+    padding: 50px;
+
+}
+
+.small-bg-apply-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-control-label {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-now-button {
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gender-heading {
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+/*read1BM section */
+.apply-bg-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744629496/Blue_Minimalist_Texture_Background_Wallpaper_Image_For_Free_Download_-_Pngtree_mlapqi.jpg");
+    background-size: cover;
+    padding: 50px;
+
+}
+
+.small-bg-apply-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-control-label {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-now-button {
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gender-heading {
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+/*read2BM section */
+
+.apply-bg-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744629496/Blue_Minimalist_Texture_Background_Wallpaper_Image_For_Free_Download_-_Pngtree_mlapqi.jpg");
+    background-size: cover;
+    padding: 50px;
+
+}
+
+.small-bg-apply-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-control-label {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-now-button {
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gender-heading {
+    font-family: Roboto;
+    font-size: 15px;
+}
